@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <title>Halaman Form</title>
+</head>
+<body>
+    
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td><label for="name">Name </label></td>
+                <td>:</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+        
+            <tr>
+                <td rowspan="1">
+                    <label for="kelas">Kelas: </label>
+                </td>
+                <td>:</td>
+                <td>
+                    <select name="kelas" id="">
+                        <option style="font-weight: bold;">Pilih Kelas</option>
+                        <option value="Kelas A">Kelas A</option>
+                        <option value="Kelas B">Kelas B</option>
+                        <option value="Kelas C">Kelas C</option>
+                    </select>
+                </td>
+            </tr>
+<!-- Required = wajib diisi -->
+            <tr>
+                <td>
+                    <label for="jeniskelamin">Jenis Kelamin</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="jeniskelamin" value="pria" required>Pria 
+                    <input type="radio" name="jeniskelamin" value="perempuan"> Perempuan 
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Hobi">Hobi: </label>
+                    
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="hobi" value=""> lari
+                    <input type="checkbox" name="hobi" value=""> renang
+                    <input type="checkbox" name="hobi" value=""> badminton
+                    <input type="checkbox" name="hobi" value=""> Baca
+                    <input type="checkbox" name="hobi" value=""> Tidur
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <label>Apakah Data yang anda masukan sudah benar?</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="konfirmasi" value="true"> Sudah 
+                </td>
+            </tr>
+        
+            <tr>
+                <td colspan="3">
+                    <button type="submit" value="submit">Submit</button>
+                    <button type="reset" value="cancel">Reset</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+    
+</body>
+</html>
